@@ -1,0 +1,21 @@
+body .woocommerce-result-count,
+body .woocommerce-ordering { display: none; }
+
+.woocommerce {
+	input { min-height: 45px; text-indent: 1em; }
+	ul.products { margin: 3em 0; }
+  #customer_details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    div {
+      float: none;
+      width: 100%;
+      max-width: 100%;
+      span.woocommerce-input-wrapper { width: 100%; }
+    }
+  }
+	#order_review {
+		.form-row { flex-direction: column; }
+	}
+}

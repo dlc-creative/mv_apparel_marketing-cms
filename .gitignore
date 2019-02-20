@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+wp-includes
+wp-admin
+wp-*.php
+xmlrpc.php
+readme.html
+php.ini
+*.txt
