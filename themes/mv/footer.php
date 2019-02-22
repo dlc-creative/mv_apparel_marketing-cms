@@ -4,10 +4,9 @@
       <div class="container">
         <div class="footer-section">
           <div class="footer-logo">
-            <!-- <img src="/wp-content/themes/daringreport/images/Presented-By-Spike.png" /> -->
+            <!-- <img src="/wp-content/themes/daringreport/images/..." /> -->
           </div>
-          <p>The content of this presentation is proprietary and confidential information of Cadillac and Spike DDB. It is not intended to be distributed to any third party and is for internal use only. No part of this website may be disclosed in any manner without the prior written consent of Cadillac and/or Spike DDB.
-          </p>
+          <p>Maecenas fringilla tincidunt sapien, eget rhoncus turpis lobortis non. Curabitur augue ligula, ultricies eu iaculis at, sodales eu velit. Suspendisse tincidunt consequat augue non eleifend. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam aliquam sed libero non vestibulum. Donec facilisis convallis tellus in ornare. Mauris sollicitudin dignissim turpis ac consequat. In dictum dictum dui, vel interdum lacus viverra eu. Vivamus sed sollicitudin odio. Sed vulputate porttitor urna vel sodales. Nam id massa sapien.</p>
         </div>
       </div>
     </footer>
