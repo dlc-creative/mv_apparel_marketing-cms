@@ -1,0 +1,12 @@
+#seasons {
+  display: flex;
+  flex-direction: column;
+  .season {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42vh;
+    padding: 2em 0;
+    border-bottom: 1px solid #ccc;
+  }
+}

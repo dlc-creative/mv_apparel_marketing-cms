@@ -118,42 +118,8 @@ get_header(); ?>
 	</div>
 </div>
 
-<div class="image-block">
-	<div class="image-container">
-		<?php if (get_field('luxury_trends')) : ?>
-			<a href=""><img src="<?php echo the_field('luxury_trends'); ?>" /></a>
-		<?php endif; ?>
-	</div>
-</div>
-
-<div class="featured-trend">
-	<?php if (get_field('trend_1')) : ?>
-		<a href="/trend-1"><img src="<?php echo the_field('trend_1'); ?>" /></a>
-	<?php endif; ?>
-</div>
-
-<div class="featured-trend">
-	<?php if (get_field('trend_2')) : ?>
-		<a href="/trend-2"><img src="<?php echo the_field('trend_2'); ?>" /></a>
-	<?php endif; ?>
-</div>
-
-<div class="featured-trend">
-	<?php if (get_field('trend_3')) : ?>
-		<a href="/trend-3"><img src="<?php echo the_field('trend_3'); ?>" /></a>
-	<?php endif; ?>
-</div>
-
-<div class="featured-trend">
-	<?php if (get_field('trend_4')) : ?>
-		<a href="/trend-4"><img src="<?php echo the_field('trend_4'); ?>" /></a>
-	<?php endif; ?>
-</div>
-
-<div class="featured-trend">
-	<?php if (get_field('trend_5')) : ?>
-		<a href="/trend-5"><img src="<?php echo the_field('trend_5'); ?>" /></a>
-	<?php endif; ?>
+<div class="info-block">
+	<?php echo do_shortcode('[wpforms id="66" title="false" description="false"]'); ?></div>
 </div>
 
 <?php
