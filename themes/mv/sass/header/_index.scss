@@ -23,9 +23,10 @@ header {
 		align-items: center;
 		display: flex;
 		justify-content: space-between;
-		padding: 3em 0;
 		width: 100%;
 		#site-header {
+			max-width: 200px;
+			max-height: 150px;
 			img { width: 100%; height: 100%; }
 		}
 		.toggler {
@@ -43,8 +44,35 @@ header {
 	}
 }
 
+#menu-mv {
+	font-size: 20px;
+	li {
+		a {
+			color: #000;
+			text-transform: uppercase;
+		}
+	}
+	@media screen and (max-width: 768px) { display: none; }
+}
+
+#nav-tools {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 1em;
+	.nav-tool {
+		margin: 0 0.5em;
+		font-size: 2em;
+	}
+}
+
+.mobile-menu {
+	display: none;
+	@media screen and (max-width: 768px) { display: block; }
+}
+
 #mobile-navigation {
-	background: color(bgWhite);
+		background: color(bgWhite);
     height: 100%;
     position: fixed;
     right: -300px;
@@ -83,6 +111,8 @@ header {
     }
 }
 
+#logo-hero { z-index: 10; }
+
 .featured-hero {
 	align-items: center;
 	background-position: top!important;
@@ -103,18 +133,22 @@ header {
 }
 
 .feature-video {
+	align-items: center;
+	background: rgba(255, 51, 0, 0.75);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	video {
+		mix-blend-mode: overlay;
 		position: relative;
 		top: 0;
+		bottom: 50px;
 		width: 100%;
-		height: 100%;
 	}
 	.featured-hero-title {
 		position: absolute;
+		top: 20em;
+		width: 50%;
 		@media(max-width: 1199px) { max-width: 60%; }
 		@media(max-width: 768px) {  }
 	}

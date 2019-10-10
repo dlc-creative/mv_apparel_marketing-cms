@@ -11,13 +11,14 @@ function startwordpress_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts');
+add_theme_support('post-thumbnails'); 
 
 // WordPress Titles
 function startwordpress_wp_title( $title, $sep ) {
 	global $paged, $page;
 	if ( is_feed() ) {
 		return $title;
-	} 
+	}
 	// Add the site name.
 	$title .= get_bloginfo( 'name' );
 	// Add the site description for the home/front page.
@@ -26,7 +27,7 @@ function startwordpress_wp_title( $title, $sep ) {
 		$title = "$title $sep $site_description";
 	}
 	return $title;
-} 
+}
 add_filter( 'wp_title', 'startwordpress_wp_title', 10, 2 );
 
 // Support Featured Images
@@ -36,3 +37,8 @@ function wpb_custom_new_menu() {
   register_nav_menu('custom-menu',__( 'Custom Menu' ));
 }
 add_action( 'init', 'wpb_custom_new_menu' );
+
+// This theme uses wp_nav_menu() in two locations.
+register_nav_menus( array(
+  'mv' => __( 'Maniv Vanity Naviation', 'mv' ),
+) );

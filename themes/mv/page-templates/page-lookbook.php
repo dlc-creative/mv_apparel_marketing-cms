@@ -5,11 +5,9 @@
 
 get_header(); ?>
 
-<div id="seasons">
-  <div id="spring" class="season">Spring</div>
-  <div id="summer" class="season">Summer</div>
-  <div id="fall" class="season">Fall</div>
-  <div id="winter"class="season">Winter</div>
+<div id="genders">
+  <div id="female" class="gender" style="background-image: url('/wp-content/themes/mv/images/columbus.jpg');">WOMEN</div>
+  <div id="male" class="gender" style="background-image: url('/wp-content/themes/mv/images/summer.jpg');">MEN</div>
 </div>
 
 <?php get_footer(); ?>

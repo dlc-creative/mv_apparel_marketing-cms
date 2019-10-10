@@ -2,8 +2,23 @@ body .woocommerce-result-count,
 body .woocommerce-ordering { display: none; }
 
 .woocommerce {
-	input { min-height: 45px; text-indent: 1em; }
-	ul.products { margin: 3em 0; }
+	.wc-stripe-payment-request-wrapper {
+		button { background: #ff0000!important; }
+	}
+	input {
+		min-height: 45px;
+		text-indent: 1em;
+		&#submit, &.button, &.alt { background: #ff0000!important; }
+	}
+	ul.products {
+		margin: 3em 0;
+		li.product {
+			.price { color: #e5523e; }
+		}
+	}
+	.product {
+		.price { color: #e5523e!important; }
+	}
   #customer_details {
     display: flex;
     flex-direction: column;

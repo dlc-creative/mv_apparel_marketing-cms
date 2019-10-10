@@ -15,6 +15,9 @@ html, body {
 	overflow-x:hidden;
 }
 
+body a { color: #000; }
+body a:hover { color: #e5523e; }
+
 input { min-height: 45px; }
 
 img {
@@ -42,3 +45,10 @@ ul {
 	padding: 0;
 	list-style: none;
 }
+
+section {
+	padding: 4em;
+	text-align: center;
+}
+
+body button { background: #e5523e!important; }

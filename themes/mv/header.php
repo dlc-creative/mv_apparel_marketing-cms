@@ -24,20 +24,31 @@
         <nav class="blog-nav">
           <div id="site-header">
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-              <img src="/wp-content/themes/daringreport/images/logo_collapsed.png">
+              <img src="/wp-content/themes/mv/images/mv-logo.png">
             </a>
           </div>
-<!--           <a class="blog-nav-item active" href="<?php echo get_bloginfo( 'wpurl' );?>">Home</a> -->
-          <?php //wp_list_pages( '&title_li=' ); ?>
-          <a href="#" class="toggler" onclick="return false;">
-            <i class="bars"></i>
-            <i class="bars"></i>
-            <i class="bars"></i>
-          </a>
+          <?php wp_nav_menu( array( 'theme_location' => 'mv', 'menu_class' => 'nav-menu', 'after' => '<span class="opener"><i class="plus"></i></span>' ) ); ?>
+          <div id="nav-tools">
+            <div id="tool-contact" class="nav-tool">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div id="tool-cart" class="nav-tool">
+              <a href="/shop"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+          </div>
+          <!-- <a class="blog-nav-item active" href="<?php echo get_bloginfo( 'wpurl' );?>">Home</a> -->
+          <!-- <?php echo wp_list_pages( '&title_li=' ); ?> -->
+          <div id="mobile-trigger" class="mobile-menu">
+            <a href="#" class="toggler" onclick="return false;">
+              <i class="bars"></i>
+              <i class="bars"></i>
+              <i class="bars"></i>
+            </a>
+          </div>
         </nav>
     </header>
 
-    <div id="mobile-navigation" role="navigation">
+    <div id="mobile-navigation" class="mobile-menu" role="navigation">
       <div class="menu-close"><i class="fa fa-times"></i></div>
         <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'after' => '<span class="opener"><i class="plus"></i></span>' ) ); ?>
     </div>
@@ -74,16 +85,13 @@
         <video autoplay loop muted>
          <source src="/wp-content/themes/mv/video/feature.mp4" type="video/mp4" />
        </video>
-    <?php endif; ?>
-
-       <?php if (is_page('homepage')) : ?>
         <div class="featured-hero-title">
-          <img src="/wp-content/uploads/2017/12/TheDaringReport-Logo.png" />
+          <img id="logo-hero" src="/wp-content/themes/mv/images/mv-logo.png" />
         </div>
-      <?php endif; ?>
-      <a href="#" class="scroll-down" onclick="return false;">
-        <i class="fa fa-chevron-down" aria-hidden="true"></i>
-      </a>
+        <a href="#" class="scroll-down" onclick="return false;">
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
     </div>
+    <?php endif; ?>
 
     <div id="main-container">

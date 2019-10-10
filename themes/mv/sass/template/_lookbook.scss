@@ -1,12 +1,25 @@
-#seasons {
+#genders {
   display: flex;
-  flex-direction: column;
-  .season {
-    display: flex;
-    justify-content: center;
+  // flex-direction: column;
+  .gender {
     align-items: center;
-    height: 42vh;
-    padding: 2em 0;
     border-bottom: 1px solid #ccc;
+    background-size: cover;
+    background-position: center;
+    background-color: #ff0000;
+    background-blend-mode: multiply;
+    color: #fff;
+    display: flex;
+    font-size: 5vh;
+    height: 50vw;
+    width: 50vw;
+    justify-content: center;
+    padding: 2em 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    transition: all 2s ease-out;
+    &:hover {
+      background-color: transparent;
+    }
   }
 }
