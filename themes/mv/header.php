@@ -30,10 +30,10 @@
           <?php wp_nav_menu( array( 'theme_location' => 'mv', 'menu_class' => 'nav-menu', 'after' => '<span class="opener"><i class="plus"></i></span>' ) ); ?>
           <div id="nav-tools">
             <div id="tool-contact" class="nav-tool">
-              <i class="fa fa-phone"></i>
+              <a href="tel:312-342-2455"><i class="fa fa-phone"></i></a>
             </div>
             <div id="tool-cart" class="nav-tool">
-              <a href="/shop"><i class="fa fa-shopping-cart"></i></a>
+              <a href="/cart"><i class="fa fa-shopping-cart"></i></a>
             </div>
           </div>
           <!-- <a class="blog-nav-item active" href="<?php echo get_bloginfo( 'wpurl' );?>">Home</a> -->
@@ -81,8 +81,8 @@
 
     ?>
     <?php if (is_page('home')) : ?>
-      <div class="feature-video">
-        <video autoplay loop muted>
+      <!-- <div class="feature-video"> -->
+        <!-- <video autoplay loop muted>
          <source src="/wp-content/themes/mv/video/feature.mp4" type="video/mp4" />
        </video>
         <div class="featured-hero-title">
@@ -91,7 +91,15 @@
         <a href="#" class="scroll-down" onclick="return false;">
           <i class="fa fa-chevron-down" aria-hidden="true"></i>
         </a>
-    </div>
+    </div> -->
+    <?php if (get_field('home_banner')) : ?>
+      <img src="<?php echo the_field('home_banner'); ?>" />
     <?php endif; ?>
+  <!-- </div> -->
+<?php elseif (is_page('shop')) : ?>
+  <div id="shop-hero" class="hero-header"></div>
+<?php elseif (is_page('blog')) : ?>
+  <div id="blog-hero" class="hero-header"></div>
+<?php endif; ?>
 
     <div id="main-container">

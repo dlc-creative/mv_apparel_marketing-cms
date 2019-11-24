@@ -162,3 +162,13 @@ header {
 		}
 	}
 }
+
+.hero-header {
+	background-size: cover!important;
+	background-position: 50% 50%!important;
+	height: 400px;
+	max-height: 400px;
+	width: 100%;
+	&#shop-hero { background: url(/wp-content/themes/mv/images/shop.jpg); }
+	&#blog-hero { background: url(/wp-content/themes/mv/images/blog.jpg); }
+}

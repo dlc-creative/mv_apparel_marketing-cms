@@ -10,7 +10,7 @@
 get_header(); ?>
 
 <div class="container page-list page-no-subtitle">
-  <div class="col-md-12 blog-column-left">
+  <div id="page-blog" class="col-md-12 blog-column-left">
 
     <?php
       $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;

@@ -54,13 +54,13 @@ get_header(); ?>
 		</div>
 		<div class="grid-section">
 			<div class="grid-section-stack" style="background: url(<?php echo the_field('gutter_card'); ?>);"></div>
-			<div class="grid-section-stack" style="background: url(<?php echo the_field('gutter_card'); ?>);"></div>
+			<div class="grid-section-stack" style="background: url(<?php echo the_field('gutter_card_two'); ?>);"></div>
 		</div>
 	</div>
 </div>
 
 <section id="collections">
-	<h1># Manic Monday</h1>
+	<h1>Holiday Specials</h1> <!-- #ManicMonday -->
 	<div class="container">
 	</div>
 </section>
@@ -75,7 +75,8 @@ get_header(); ?>
 <section id="newsletter">
 	<h1>Sign Up For Our Newsletter</h1>
 	<div class="container">
-		<?php echo do_shortcode('[wpforms id="66" title="false" description="false"]'); ?></div>
+		<?php $formID = ($_SERVER['SERVER_NAME'] == "localhost") ? "66" : "31"; ?>
+		<?php echo do_shortcode('[wpforms id="'.$formID.'" title="false" description="false"]'); ?></div>
 	</div>
 </div>
 
@@ -85,7 +86,7 @@ get_header(); ?>
 		<div class="tout-block">
 			<div class="media">
 				<h3>Facebook</h3>
-				<!-- <?php echo do_shortcode('[custom-facebook-feed]'); ?> -->
+				<?php echo do_shortcode('[custom-facebook-feed]'); ?>
 			</div>
 			<div class="media">
 				<h3>Instagram</h3>
@@ -135,6 +136,10 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+</section>
+
+<section id="store">
+	<h1>Cleveland, OH &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Las Vegas, NV</h1>
 </section>
 
 <?php

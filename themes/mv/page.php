@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="post-container">
+<div id="<?php echo str_replace("/", "", $_SERVER['REQUEST_URI']); ?>" class="post-container">
 
 	<div class="row">
 		<div class="col-sm-12">
