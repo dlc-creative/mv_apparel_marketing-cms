@@ -44,13 +44,13 @@ h6, .h6 {
 }
 .blog-nav-item:hover,
 .blog-nav-item:focus {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
 }
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
-  color: #fff;
+  /* color: #fff; */
 }
 .blog-nav .active:after {
   position: absolute;
@@ -68,11 +68,11 @@ h6, .h6 {
 .blog-nav li {
   position: relative;
   display: inline-block;
-  padding: 10px;
+  padding: 1.5em;
   font-weight: 500;
 }
 .blog-nav li a {
-  color: #fff;
+  /* color: #fff; */
 }
 
 /*
@@ -139,7 +139,7 @@ h6, .h6 {
  */
 
 .blog-post {
-  margin-bottom: 60px;
+  margin-bottom: 3em;
 }
 .blog-post-title {
   margin-bottom: 5px;

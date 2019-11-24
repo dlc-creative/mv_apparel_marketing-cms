@@ -1,0 +1,144 @@
+2019-03-16T00:56:57+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:04:03+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:04:04+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:04:45+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:04:45+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:08:58+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T01:09:02+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T03:08:05+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T03:08:22+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:27
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 27
+
+2019-03-16T03:21:46+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:23:14+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:23:53+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:23:55+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:24:46+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:31:49+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T03:57:32+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T04:12:24+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
+2019-03-16T05:21:33+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+

@@ -1,12 +1,60 @@
-#seasons {
+#genders {
   display: flex;
-  flex-direction: column;
-  .season {
-    display: flex;
-    justify-content: center;
+  // flex-direction: column;
+  .gender {
     align-items: center;
-    height: 42vh;
-    padding: 2em 0;
     border-bottom: 1px solid #ccc;
+    background-size: cover;
+    background-position: center;
+    background-color: #ff0000;
+    background-blend-mode: multiply;
+    color: #fff;
+    display: flex;
+    font-size: 5vh;
+    height: 50vw;
+    width: 50vw;
+    justify-content: center;
+    padding: 2em 0;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    transition: all 2s ease-out;
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+#lookbook {
+  margin: 1.5em;
+  padding: 0;
+  -moz-column-gap: 1.5em;
+  -webkit-column-gap: 1.5em;
+  column-gap: 1.5em;
+  font-size: .85em;
+  @media only screen and (min-width: 1100px) {
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4!important;
+  }
+  @media only screen and (min-width: 980px) {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3!important;
+  }
+  @media only screen and (min-width: 768px) {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .lookbook-item {
+    flex: auto;
+    display: inline-block;
+    margin: 0 0 1.5em 0;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: brightness(50%);
+    }
   }
 }

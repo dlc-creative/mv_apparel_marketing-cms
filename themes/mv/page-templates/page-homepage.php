@@ -15,21 +15,21 @@ get_header(); ?>
 			<h4 class="section-title"><?php echo the_field('statement'); ?></h4>
 		<?php endif; ?>
 	</div>
+	<hr />
 </div>
-
-<div class="image-block">
+<!-- <div class="image-block">
 	<?php if (get_field('home_banner')) : ?>
 		<img src="<?php echo the_field('home_banner'); ?>" />
 	<?php endif; ?>
-</div>
+</div> -->
 
-<div class="touts">
+<!-- <div class="touts">
 	<?php if (get_field('touts')) { echo the_field('touts'); } ?>
-</div>
+</div> -->
 
 <?php if (is_page('homepage')) { echo do_shortcode( '[soliloquy slug="homepage"]' ); } ?>
 
-<div class="split-block light-gray-block">
+<!-- <div class="split-block light-gray-block">
 	<div class="col-md-8">
 		<?php if (get_field('placeholder_card')) : ?>
 			<img src="<?php echo the_field('placeholder_card'); ?>" />
@@ -45,82 +45,102 @@ get_header(); ?>
 			<?php endif; ?>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<div class="image-tile">
-<?php if (get_field('tout_card')) : ?>
-	<img src="<?php echo the_field('tout_card'); ?>" />
-<?php endif; ?>
-</div>
-
-<video controls poster="wp-content/themes/daringreport/images/Daring-30-40.jpg">
-	<source src="wp-content/themes/daringreport/video/30.mp4" type="video/mp4" />
-</video>
-
-<div class="image-block">
-	<div class="image-container">
-		<?php if (get_field('daring_in-depth')) : ?>
-			<img src="<?php echo the_field('daring_in-depth'); ?>" />
-		<?php endif; ?>
-	</div>
-</div>
-
-<div class="split-block">
-	<div class="col-md-8">
-		<div class="feature-video">
-			<video controls poster="wp-content/themes/daringreport/images/Fiana-Still.jpg">
-				<source src="wp-content/themes/daringreport/video/Fiana.mp4" type="video/mp4" />
-			</video>
+<div class="container">
+	<div class="grid">
+		<div class="grid-section">
+			<div class="grid-section-stack" style="background: url(<?php echo the_field('tout_card'); ?>);"></div>
 		</div>
-	</div>
-	<div class="col-md-4">
-		<img src="wp-content/themes/daringreport/images/Daring-In-Depth-Fiana-Son3.jpg" />
-	</div>
-</div>
-
-<div class="image-block">
-	<div class="image-container">
-		<?php if (get_field('daring_40-55')) : ?>
-			<img src="<?php echo the_field('daring_40-55'); ?>" />
-		<?php endif; ?>
-	</div>
-</div>
-
-<video controls poster="wp-content/themes/daringreport/images/Daring-40-55.jpg">
-	<source src="wp-content/themes/daringreport/video/40.mp4" type="video/mp4" />
-</video>
-
-<div class="tout-block">
-	<div class="media col-md-4">
-		<h3>Facebook</h3>
-		<?php echo do_shortcode('[custom-facebook-feed]'); ?>
-	</div>
-	<div class="media col-md-4">
-		<h3>Instagram</h3>
-		<?php echo do_shortcode('[instagram-feed num=12 cols=4]'); ?>
-	</div>
-	<div class="media col-md-4">
-		<h3>Twitter</h3>
-		<?php echo do_shortcode('[custom-twitter-feeds]'); ?>
-	</div>
-</div>
-
-<div class="split-block">
-	<div class="col-md-4">
-		<img src="wp-content/themes/daringreport/images/Daring-In-Depth-Eugene-Portrait.jpg" />
-	</div>
-	<div class="col-md-8">
-		<div class="feature-video">
-			<video controls poster="wp-content/themes/daringreport/images/Eugene-Still.jpg">
-				<source src="wp-content/themes/daringreport/video/Eugene.mp4" type="video/mp4" />
-			</video>
+		<div class="grid-section">
+			<div class="grid-section-stack" style="background: url(<?php echo the_field('gutter_card'); ?>);"></div>
+			<div class="grid-section-stack" style="background: url(<?php echo the_field('gutter_card_two'); ?>);"></div>
 		</div>
 	</div>
 </div>
 
-<div class="info-block">
-	<?php echo do_shortcode('[wpforms id="66" title="false" description="false"]'); ?></div>
+<section id="collections">
+	<h1>Holiday Specials</h1> <!-- #ManicMonday -->
+	<div class="container">
+	</div>
+</section>
+
+<section id="products">
+	<h1>New Arrivals</h1>
+	<div class="container">
+		<?php echo do_shortcode('[products]'); ?>
+	</div>
+</section>
+
+<section id="newsletter">
+	<h1>Sign Up For Our Newsletter</h1>
+	<div class="container">
+		<?php $formID = ($_SERVER['SERVER_NAME'] == "localhost") ? "66" : "31"; ?>
+		<?php echo do_shortcode('[wpforms id="'.$formID.'" title="false" description="false"]'); ?></div>
+	</div>
 </div>
+
+<section id="socials">
+	<h1>Follow Us</h1>
+	<div class="container">
+		<div class="tout-block">
+			<div class="media">
+				<h3>Facebook</h3>
+				<?php echo do_shortcode('[custom-facebook-feed]'); ?>
+			</div>
+			<div class="media">
+				<h3>Instagram</h3>
+				<?php echo do_shortcode('[instagram-feed num=12 cols=4]'); ?>
+			</div>
+			<div class="media">
+				<h3>Twitter</h3>
+				<?php echo do_shortcode('[custom-twitter-feeds]'); ?>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="blog">
+	<h1>Our News</h1>
+	<div class="container">
+		<div class="split-block">
+			<div class="blog-stack">
+				<?php
+
+				  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+				  $limit = 3;
+
+				  $loop = query_posts( array('post_type' => 'post', 'paged' => $paged, 'posts_per_page' => $limit ) );
+
+					while ( have_posts() ) : the_post();
+
+				?>
+
+				<div class="blog-post">
+				  <?php if ( has_post_thumbnail() ) : ?>
+				    <div class="blog-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
+				  <?php endif; ?>
+				  <div class="blog-section">
+				    <h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				    <p class="blog-post-meta"><?php echo the_date(); ?></p>
+				    <div class="blog-content">
+				      <?php the_excerpt(); ?>
+				    </div>
+				  </div>
+				</div><!-- /.blog-post -->
+
+
+				<?php endwhile; ?>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="store">
+	<h1>Cleveland, OH &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Las Vegas, NV</h1>
+</section>
 
 <?php
 get_footer();

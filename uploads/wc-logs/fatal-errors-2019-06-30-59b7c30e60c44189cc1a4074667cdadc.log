@@ -1,0 +1,8 @@
+2019-06-30T23:21:29+00:00 CRITICAL Uncaught Error: Call to undefined function paginate() in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php:31
+Stack trace:
+#0 /var/www/html/wp-includes/template-loader.php(74): include()
+#1 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#2 /var/www/html/index.php(17): require('/var/www/html/w...')
+#3 {main}
+  thrown in /var/www/html/wp-content/themes/mv/page-templates/page-blog.php on line 31
+
