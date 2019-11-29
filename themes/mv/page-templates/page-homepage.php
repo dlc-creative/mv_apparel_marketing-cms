@@ -82,61 +82,59 @@ get_header(); ?>
 
 <section id="socials">
 	<h1>Follow Us</h1>
-	<div class="container">
-		<div class="tout-block">
-			<div class="media">
-				<h3>Facebook</h3>
-				<?php echo do_shortcode('[custom-facebook-feed]'); ?>
-			</div>
-			<div class="media">
-				<h3>Instagram</h3>
-				<?php echo do_shortcode('[instagram-feed num=12 cols=4]'); ?>
-			</div>
-			<div class="media">
-				<h3>Twitter</h3>
-				<?php echo do_shortcode('[custom-twitter-feeds]'); ?>
-			</div>
+	<div class="tout-block">
+		<div class="media">
+			<div class="title"><h3>Facebook</h3></div>
+			<div class="content"><?php echo do_shortcode('[custom-facebook-feed]'); ?></div>
+		</div>
+		<div class="media">
+			<div class="title"><h3>Instagram</h3></div>
+			<div class="content"><?php echo do_shortcode('[instagram-feed num=12 cols=4]'); ?></div>
+		</div>
+		<div class="media">
+			<div class="title"><h3>Twitter</h3></div>
+			<div class="content"><?php echo do_shortcode('[custom-twitter-feeds]'); ?></div>
 		</div>
 	</div>
 </section>
 
-<section id="blog">
+<!-- <section id="blog">
 	<h1>Our News</h1>
 	<div class="container">
 		<div class="split-block">
-			<div class="blog-stack">
+			<div class="blog-stack"> -->
 				<?php
-
-				  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-				  $limit = 3;
-
-				  $loop = query_posts( array('post_type' => 'post', 'paged' => $paged, 'posts_per_page' => $limit ) );
-
-					while ( have_posts() ) : the_post();
+					//
+				  // $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+					//
+				  // $limit = 3;
+					//
+				  // $loop = query_posts( array('post_type' => 'post', 'paged' => $paged, 'posts_per_page' => $limit ) );
+					//
+					// while ( have_posts() ) : the_post();
 
 				?>
 
-				<div class="blog-post">
-				  <?php if ( has_post_thumbnail() ) : ?>
-				    <div class="blog-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
-				  <?php endif; ?>
-				  <div class="blog-section">
+				<!-- <div class="blog-post"> -->
+				  <?php  //if ( has_post_thumbnail() ) : ?>
+				    <!-- <div class="blog-image" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div> -->
+				  <?php // endif; ?>
+				  <!-- <div class="blog-section">
 				    <h2 class="blog-post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				    <p class="blog-post-meta"><?php echo the_date(); ?></p>
 				    <div class="blog-content">
 				      <?php the_excerpt(); ?>
 				    </div>
-				  </div>
-				</div><!-- /.blog-post -->
+				  </div> -->
+				<!-- </div> -->
 
 
-				<?php endwhile; ?>
+				<?php // endwhile; ?>
 
-			</div>
+			<!-- </div>
 		</div>
 	</div>
-</section>
+</section> -->
 
 <section id="store">
 	<h1>Cleveland, OH &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Las Vegas, NV</h1>

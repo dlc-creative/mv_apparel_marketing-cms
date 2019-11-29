@@ -587,9 +587,25 @@ header {
   background: #e5523e; }
   #socials h1 {
     color: #fff; }
-  #socials .media {
+  @media screen and (max-width: 1200px) {
+    #socials .tout-block {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; } }
+  #socials .tout-block .media {
+    overflow: none !important;
+    padding: 0;
     background: #fff; }
-    #socials .media a {
+    #socials .tout-block .media .title {
+      background: #f1f1f1;
+      padding: 1em;
+      width: 100%; }
+      #socials .tout-block .media .title h3 {
+        margin: 0 !important; }
+    #socials .tout-block .media .content {
+      overflow: scroll;
+      padding: 2em 1em;
+      width: 100%; }
+    #socials .tout-block .media a {
       color: #e5523e; }
 
 #store {
@@ -598,7 +614,7 @@ header {
           align-items: center;
   background: url(/wp-content/themes/mv/images/store.jpg);
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   background-position: center;
   background-size: cover;
   color: #fff;

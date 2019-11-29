@@ -225,9 +225,25 @@
 #socials {
 	background: #e5523e;
 	h1 { color: #fff; }
-	.media {
-		background: #fff;
-		a { color: #e5523e; }
+	.tout-block {
+		@media screen and (max-width: 1200px) { flex-wrap: wrap; }
+		.media {
+			overflow: none!important;
+			padding: 0;
+			background: #fff;
+			.title {
+				background: #f1f1f1;
+				padding: 1em;
+				width: 100%;
+				h3 { margin: 0!important; }
+			}
+			.content {
+				overflow: scroll;
+				padding: 2em 1em;
+				width: 100%;
+			}
+			a { color: #e5523e; }
+		}
 	}
 }
 
@@ -235,7 +251,7 @@
 	align-items: center;
 	background: url(/wp-content/themes/mv/images/store.jpg);
 	background-blend-mode: multiply;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.75);
 	background-position: center;
 	background-size: cover;
 	color: #fff;
