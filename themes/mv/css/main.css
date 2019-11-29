@@ -774,6 +774,9 @@ body .woocommerce-ordering {
 .order-total .amount {
   color: #8fae1b; }
 
+#shop .row {
+  width: 100% !important; }
+
 /* Blog */
 #page-blog {
   margin: 5em 0; }
