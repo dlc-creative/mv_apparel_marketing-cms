@@ -19,6 +19,7 @@ body .woocommerce-ordering { display: none; }
 	}
 	.product {
 		.price { color: #e5523e!important; font-size: 1.25em; }
+		.product_meta { display: none!important; }
 	}
   #customer_details {
     display: flex;

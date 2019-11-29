@@ -719,6 +719,9 @@ body .woocommerce-ordering {
   color: #e5523e !important;
   font-size: 1.25em; }
 
+.woocommerce .product .product_meta {
+  display: none !important; }
+
 .woocommerce #customer_details {
   display: -webkit-box;
   display: -ms-flexbox;
