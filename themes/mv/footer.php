@@ -12,6 +12,7 @@
                 <p>Manic Vanity&trade; <?php echo date("Y"); ?> &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; Live Life Fresh LLC</p>
               </div>
             </div>
+            <small><a href="/privacy-policy/" style="color:#9a9a9a;">Privacy Policy</a></small>
           </div>
         </div>
       </div>

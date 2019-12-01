@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Manic Vanity Clothing Brand will provide clothing that combines art and a high-end lifestyle through quality apparel. Our goal is to provide timeless pieces that you buy today that iwll be relevant in the future. We want to cater to the fashion forward individuals who take excessive pride and enthusiasm in their appearance.">
+    <meta name="author" content="Manic Vanity">
 
     <title><?php wp_title( '|', true, 'right' ); ?></title>
 
@@ -30,7 +30,7 @@
           <?php wp_nav_menu( array( 'theme_location' => 'mv', 'menu_class' => 'nav-menu', 'after' => '<span class="opener"><i class="plus"></i></span>' ) ); ?>
           <div id="nav-tools">
             <div id="tool-contact" class="nav-tool">
-              <a href="tel:312-342-2455"><i class="fa fa-phone"></i></a>
+              <a href="tel:216-395-7478"><i class="fa fa-phone"></i></a>
             </div>
             <div id="tool-cart" class="nav-tool">
               <a href="/cart"><i class="fa fa-shopping-cart"></i></a>

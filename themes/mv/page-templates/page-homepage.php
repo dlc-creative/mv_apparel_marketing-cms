@@ -83,10 +83,10 @@ get_header(); ?>
 <section id="socials">
 	<h1>Follow Us</h1>
 	<div class="tout-block">
-		<div class="media">
+		<!-- <div class="media">
 			<div class="title"><h3>Facebook</h3></div>
 			<div class="content"><?php echo do_shortcode('[custom-facebook-feed]'); ?></div>
-		</div>
+		</div> -->
 		<div class="media">
 			<div class="title"><h3>Instagram</h3></div>
 			<div class="content"><?php echo do_shortcode('[instagram-feed num=12 cols=4]'); ?></div>
